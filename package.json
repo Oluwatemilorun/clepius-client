@@ -1,0 +1,28 @@
+{
+	"name": "clepius-client",
+	"version": "1.0.0",
+	"description": "Clepius - Health Management System",
+	"author": "Isaac Oluwatemilorun",
+	"private": true,
+	"scripts": {
+		"dev": "nuxt",
+		"build": "nuxt build",
+		"start": "nuxt start",
+		"generate": "nuxt generate"
+	},
+	"dependencies": {
+		"@mdi/font": "^4.6.95",
+		"@nuxtjs/axios": "^5.3.6",
+		"@nuxtjs/dotenv": "^1.4.0",
+		"js-cookie": "^2.2.1",
+		"moment": "^2.24.0",
+		"nuxt": "^2.0.0",
+		"roboto-fontface": "^0.10.0"
+	},
+	"devDependencies": {
+		"@nuxtjs/vuetify": "^1.0.0",
+		"eslint-config-prettier": "^4.1.0",
+		"eslint-plugin-prettier": "^3.0.1",
+		"prettier": "^1.16.4"
+	}
+}
