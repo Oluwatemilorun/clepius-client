@@ -1,8 +1,6 @@
 <template>
 	<v-app class="wrapper" :style="`background-image: url(${Pattern})`">
-		<v-container fill-height>
-			<nuxt />
-		</v-container>
+		<nuxt />
 	</v-app>
 </template>
 
