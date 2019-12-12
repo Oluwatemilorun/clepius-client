@@ -1,34 +1,36 @@
 <template>
-	<v-app style="background-color: #eee">
-		<v-row class="pa-sm-10 pa-xs-0 justify-center align-center">
-			<v-col md="6" sm="12" xs="12" cols="12"></v-col>
-			<v-col md="6" sm="12" xs="12" class="pa-12" cols="12">
-				<v-card outlined class="pa-7">
-					<p style="color: #6200ea" class="ma-0 font-weight-bold">Welcome back!</p>
-					<h1 class="ma-0">Sign In</h1>
-					<v-text-field outlined dense class="mt-10" label="Enter email or ID"/>
-					<v-text-field outlined dense label="Enter Password"/>
-					<div class="d-flex flex-row-reverse">
-						<a style="color: #FB3276" class="font-weight-bold">Forgot Password?</a>
-					</div>
-					<v-btn large color="primary">SIGN IN</v-btn>
-					<div class="mt-5 font-weight-bold">
-						New patient? <a style="color: #FB3276">Create Account</a>
-					</div>
-					<div class="d-flex justify-space-between mt-10">
-						<a style="color: #FB3276" class="font-weight-bold">Privacy Policy</a>
-						<a style="color: #FB3276" class="font-weight-bold">Terms & Conditions</a>
-						<a style="color: #FB3276" class="font-weight-bold">How it works</a>
-					</div>
-				</v-card>
-			</v-col>
-		</v-row>
-	</v-app>
+	<v-row>
+		<v-col cols="12" class="mb-5">
+			<p class="primary--text mb-1 font-weight-bold">Welcome back!</p>
+			<h1 class="ma-0">Sign In</h1>
+		</v-col>
+		<v-col cols="12" class="py-1">
+			<v-text-field outlined label="Enter email or ID" />
+		</v-col>
+		<v-col cols="12" class="py-1">
+			<v-text-field outlined label="Enter Password" />
+		</v-col>
+		<v-col cols="12" class="pt-1">
+			<v-row no-gutters>
+				<v-spacer class="hidden-sm-and-down"></v-spacer>
+				<v-btn text small color="accent">Forgot Password?</v-btn>
+			</v-row>
+		</v-col>
+		<v-col cols="12">
+			<v-btn large color="primary">SIGN IN</v-btn>
+		</v-col>
+		<v-col cols="12">
+			<v-row no-gutters class="align-center caption-1">
+				<span>New patient?</span>
+				<v-btn text small color="accent" class="text-capitalize">Create Account</v-btn>
+			</v-row>
+		</v-col>
+	</v-row>
 </template>
 
 <script>
 export default {
-	layout: 'blank'
+	layout: 'auth'
 }
 </script>
 
